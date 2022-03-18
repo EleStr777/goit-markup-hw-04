@@ -163,15 +163,23 @@ color: var(--main-grey);
          /*Герой*/
 
 .hero {
-    /*width: 1600px;
+width: 1600px;
 height: 600px;
+margin-left: auto;
+margin-right: auto;/*
 left: 0px;
 top: 80px;*/
 /*position: absolute;*/
 text-align: center;
 padding-bottom: 200px;
 padding-top: 200px;
-background: var(--footer-background);}
+background-image:
+linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/Hero.jpg);
+background-color: var(--footer-background);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;}
 .hero-title {
     max-width: 700px;
     margin-left: auto;
@@ -208,6 +216,12 @@ color: var(--white-text); }
        /*Особенности*/
 .performance {
     padding-bottom: 94px;   
+}
+.peculiarity {
+    background-color: var(--section-background);
+}
+.icon-peculiarity {
+ fill: tomato;   
 }
 .peculiarity-list {
     display: flex;
