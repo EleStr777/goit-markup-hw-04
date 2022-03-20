@@ -23,6 +23,8 @@
 /*Цвет рамки*/
 --border-style: 1px solid #EEEEEE;
 --border-header: 1px solid #ECECEC;
+/**/
+--icon: #AFB1B8;
 }
 h1, h2, h3, h4, h5, p, ul, ol {
     margin-top: 0;
@@ -103,7 +105,13 @@ body {
 .nav-item {
     margin-right: 50px;
 }
+.icon-contact {
+    margin-right: 10px;
+    fill: currentColor;
+}
 .contact-item {
+    display: flex;
+    align-items: center;
     margin-left: 50px;
 }
 .nav-item:last-child {
@@ -136,6 +144,8 @@ color: var(--main-grey);
 .contact-link {
     /*padding-top: 32px;
     padding-bottom: 32px;*/
+    display: flex;
+    align-items: center;
     font-weight: 500;
     color: var(--main-color);
 }
@@ -146,6 +156,9 @@ color: var(--main-grey);
 .nav-link:focus, .contact-link:hover, .contact-link:focus {
     color: var(--select-color);
 }
+/*.contact-link .icon-contact:hover, .contact-link .icon-contact:focus {
+    fill: accent color;
+}*/
 .link.current {
     color: var(--select-color);
 }
@@ -163,7 +176,7 @@ color: var(--main-grey);
          /*Герой*/
 
 .hero {
-width: 1600px;
+max-width: 1600px;
 height: 600px;
 margin-left: auto;
 margin-right: auto;/*
@@ -218,10 +231,18 @@ color: var(--white-text); }
     padding-bottom: 94px;   
 }
 .peculiarity {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
     background-color: var(--section-background);
 }
 .icon-peculiarity {
- fill: tomato;   
+    
+   
 }
 .peculiarity-list {
     display: flex;
@@ -300,7 +321,7 @@ color: var(--main-grey);
     line-height: 1.19;
 /* text-align: center;*/
     letter-spacing: 0.03em;
-    /*margin-bottom: 30px;*/
+    margin-bottom: 16px;
     color: var(--main-color);
 }
 .performance-list {
@@ -331,6 +352,27 @@ color: var(--main-grey);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-grey);
+}
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-item:not(:last-child) {
+margin-right: 10px;
+}
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: tomato;
+}
+.socials-icon {
+    fill: var(--icon);
 }
           /*Футер*/
 .footer {
