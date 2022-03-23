@@ -476,6 +476,7 @@ margin-bottom: 20px;
     margin-right: 8px;
 }
  .filter-btn {
+     display: block;
      cursor: pointer;
     font-family: var(--main-font);
     font-weight: 500;
